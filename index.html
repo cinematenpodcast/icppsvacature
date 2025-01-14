@@ -1,41 +1,64 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <meta charset="UTF-8" />
   <title>My HTML document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 24px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .featured-image {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      object-fit: cover;
+    }
+    
+    h1 {
+      color: #ff6d5a;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 8px;
+      margin: 0;
+    }
+    
+    h2 {
+      color: #909399;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <img scr="https://icapps.com/uploads/site/vacaturefotos/icapps_2024_10-Fotoshoot-Q4-Pt2-DSC00801.jpg" />
+    <img 
+      src="https://icapps.com/uploads/site/vacaturefotos/icapps_2024_10-Fotoshoot-Q4-Pt2-DSC00801.jpg" 
+      alt="iCapps office photo"
+      class="featured-image"
+    />
     <h2>Backend Developer</h2>
   </div>
+
+  <script>
+    console.log("Hello World!");
+  </script>
 </body>
 </html>
-
-<style>
-.container {
-  background-color: #ffffff;
-  text-align: center;
-  padding: 16px;
-  border-radius: 8px;
-}
-
-h1 {
-  color: #ff6d5a;
-  font-size: 24px;
-  font-weight: bold;
-  padding: 8px;
-}
-
-h2 {
-  color: #909399;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 8px;
-}
-</style>
-
-<script>
-console.log("Hello World!");
-</script>
