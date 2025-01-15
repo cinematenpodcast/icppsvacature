@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link href="page1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="fade"></div>
+    <div class="social-template" style="
+    background: url(vacature_photo_1.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  ">
+        <img class="slash" src="slash0.svg" />
+        <div class="content">
+            <div class="tagline">
+                <div class="tagline2">in search of a</div>
+            </div>
+            <div class="text">backend developer</div>
+        </div>
+    </div>
+
+    <script>
+        // Function to split text
+        const splitText = () => {
+            const textDiv = document.querySelector('.text');
+            if (textDiv) {
+                const words = textDiv.textContent.trim().split(' ');
+                const lineHeight = parseInt(getComputedStyle(textDiv).fontSize) * 1.1; // Using the line-height from CSS
+                
+                // Clear any previously applied styles
+                textDiv.style.whiteSpace = 'pre-wrap';
+                textDiv.style.height = 'auto';
+                
+                // Join words with line breaks
+                textDiv.textContent = words.join('\n');
+                
+                // Calculate and set the height based on number of lines
+                const numberOfLines = words.length;
+                textDiv.style.height = `${lineHeight * numberOfLines}px`;
+            }
+        };
+
+        // Run once DOM is loaded
+        document.addEventListener('DOMContentLoaded', splitText);
+        
+        // Optional: Run on resize if needed
+        window.addEventListener('resize', splitText);
+    </script>
+</body>
+</html>

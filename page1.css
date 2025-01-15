@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'HKNova-Medium';
+    src: url('HKNova-Medium.woff2') format('woff2'),
+         url('HKNova-Medium.woff') format('woff'),
+         url('HKNova-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HkNova-Heavy';
+    src: url('HKNova-Heavy.woff2') format('woff2'),
+         url('HKNova-Heavy.woff') format('woff'),
+         url('HKNova-Heavy.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+}
+
+.social-template,
+.social-template * {
+    box-sizing: border-box;
+}
+
+.social-template {
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fade {
+    background: linear-gradient(3.42deg,
+            rgba(0, 37, 71, 0.3) 0%,
+            rgba(0, 37, 71, 0) 100%);
+    width: 1080px;
+    height: 1080px;
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+    top: 50%;
+    z-index: 1;
+}
+
+.slash {
+    width: 894px;
+    height: 1357px;
+    position: absolute;
+    left: 50%;
+    translate: 14.7%;
+    top: -235px;
+    overflow: visible;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 952px;
+    position: absolute;
+    right: 64px;
+    bottom: 64px;
+    z-index: 2;
+}
+
+.tagline {
+    background: var(--coloricon-think, #0098c7);
+    padding: 12px 16px 12px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.tagline2 {
+    color: var(--colorbackground-canvas, #f3f5f7);
+    text-align: center;
+    font-family: "HKNova-Medium", sans-serif;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.text {
+    white-space: pre-wrap;
+    text-align: right;
+    color: var(--colortitle-default, #ffffff);
+    font-family: "HKNova-Heavy", sans-serif;
+    font-size: 96px;
+    line-height: 110%;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    width: 1020px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}

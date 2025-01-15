@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'HKNova-Medium';
+    src: url('HKNova-Medium.woff2') format('woff2'),
+         url('HKNova-Medium.woff') format('woff'),
+         url('HKNova-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HkNova-Heavy';
+    src: url('HKNova-Heavy.woff2') format('woff2'),
+         url('HKNova-Heavy.woff') format('woff'),
+         url('HKNova-Heavy.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+}
+
+.vacture-template,
+.vacture-template * {
+    box-sizing: border-box;
+}
+
+.vacture-template {
+    background: var(--colorbackground-canvas, #002547);
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 318px;
+    position: absolute;
+    left: 381px;
+    top: 164px;
+}
+
+.frame-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 293px;
+    position: relative;
+}
+
+.pin-1 {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: visible;
+}
+
+.where {
+    color: var(--colortitle-default, #ffffff);
+    text-align: center;
+    font-family: "HKNova-Heavy", sans-serif;
+    font-size: 64px;
+    line-height: 110%;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    align-self: stretch;
+}
+
+.brussel {
+    color: var(--colortext-default, #ffffff);
+    text-align: center;
+    font-family: "HKNova-Medium", sans-serif;
+    font-size: 48px;
+    line-height: 130%;
+    font-weight: 500;
+    position: relative;
+    width: 880px;
+}
+
+.frame-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.calendar {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: visible;
+}
+
+.when {
+    color: var(--colortitle-default, #ffffff);
+    text-align: center;
+    font-family: "HKNova-Heavy", sans-serif;
+    font-size: 64px;
+    line-height: 110%;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    align-self: stretch;
+}
+
+.opstart-asap {
+    color: var(--colortext-default, #ffffff);
+    text-align: center;
+    font-family: "HKNova-Medium", sans-serif;
+    font-size: 48px;
+    line-height: 130%;
+    font-weight: 500;
+    position: relative;
+    width: 880px;
+}
