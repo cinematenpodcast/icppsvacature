@@ -25,82 +25,82 @@ body {
   box-sizing: border-box;
 }
 .li-react-developer {
-  background: linear-gradient(
+    background: linear-gradient(
     79.14deg,
     rgba(0, 37, 71, 0.1) 0%,
     rgba(0, 37, 71, 0) 100%
   );
-  height: 628px;
-  position: relative;
-  overflow: hidden;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
 }
 .slash {
     height: 1357px;
     position: absolute;
-    left: -14%;
+    left: -1%;
     top: -15px;
     overflow: visible;
 }
 .frame-901 {
-  display: flex;
-  flex-direction: column;
-  gap: 31px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 1020px;
-  position: absolute;
-  left: 48px;
-  bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 1256;
+    position: absolute;
+    left: 96;
+    bottom: 72;
 }
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-end;
-  align-self: stretch;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
 }
 .frame-902 {
-  display: flex;
-  flex-direction: column;
-  gap: 31px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
 .tagline {
-  background: var(--coloricon-maintain, #826db0);
-  padding: 12px 16px 12px 16px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
+    background: var(--coloricon-maintain, #826db0);
+    padding: 24px 32px 24px 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
 }
 .tagline2 {
-  color: var(--colorbackground-canvas, #f3f5f7);
-  text-align: center;
-  font-family: "HkNova-Medium", sans-serif;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0.25em;
-  font-weight: 500;
-  text-transform: uppercase;
-  position: relative;
+    color: var(--colorbackground-canvas, #f3f5f7);
+    text-align: center;
+    font-family: "HkNova-Medium", sans-serif;
+    font-size: 64;
+    line-height: 100%;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
 }
 .ux-ui-designer {
-  color: var(--colorbackground-surfacegeneral, #ffffff);
-  text-align: left;
-  font-family: "HkNova-Heavy", sans-serif;
-  font-size: 100px;
-  line-height: 110%;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-  width: 1020px;
+    color: var(--colorbackground-surfacegeneral, #ffffff);
+    text-align: left;
+    font-family: "HkNova-Heavy", sans-serif;
+    font-size: 200;
+    line-height: 110%;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    width: 1256;
 }
