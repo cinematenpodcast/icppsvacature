@@ -47,7 +47,7 @@ body {
     gap: 62px;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 1256;
+    width: 2040px;
     position: absolute;
     left: 96;
     bottom: 72;
@@ -102,5 +102,4 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     position: relative;
-    width: 1256;
 }
