@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'HKNova-Light';
+    src: url('HKNova-Light.woff2') format('woff2'),
+         url('HKNova-Light.woff') format('woff'),
+         url('HKNova-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HKNova-Medium';
+    src: url('HKNova-Medium.woff2') format('woff2'),
+         url('HKNova-Medium.woff') format('woff'),
+         url('HKNova-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'HKNova-Heavy';
+    src: url('HKNova-Heavy.woff2') format('woff2'),
+         url('HKNova-Heavy.woff') format('woff'),
+         url('HKNova-Heavy.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Full screen height */
+    background-color: #000; /* Background fallback */
+}
+
+/* Background container */
+.beschikbaar-template {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+    background-image: url('https://icapps.com/uploads/site/kantoorpics/icapps_Kantoor-verbouwingen_DSC03745.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.beschikbaar-template::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 37, 71, 0.25); /* Dark overlay */
+}
+
+/* Slash Image */
+.slash-icon {
+    position: absolute;
+    width: 894px;
+    height: 1357px;
+    opacity: 0.7;
+    z-index: 1; /* Keep behind text */
+}
+
+/* Text Container (centers both titles) */
+.text-container {
+    position: relative;
+    z-index: 2; /* Ensures it's above the background */
+    display: flex;
+    flex-direction: column; /* Stack "Beschikbaar" on top */
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between "Beschikbaar" and "Developer" */
+}
+
+/* "Beschikbaar" Title */
+.functie {
+    font-family: 'HKNova-Heavy';
+    font-size: 120px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.35);
+    color: #fff;
+    text-align: center;
+}
+
+/* "Developer" Box */
+.beschikbaar {
+    background-color: #0098c7;
+    padding: 12px 24px;
+    font-size: 32px;
+    letter-spacing: 0.25em;
+    color: #f3f5f7;
+    font-family: 'HKNova-Medium';
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
